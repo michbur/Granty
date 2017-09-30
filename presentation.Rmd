@@ -1,0 +1,108 @@
+---
+title: "Preludium do PRELUDIUM"
+author: "Michal Burdukiewicz"
+date: "2-10-2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.width = 10, fig.height = 5.5)
+
+library(ggplot2)
+library(dplyr)
+library(reshape2)
+```
+
+## Preludium 14
+
+Projekty badawcze realizowane przez osoby rozpoczynające karierę naukową nieposiadające stopnia naukowego doktora.
+
+## Panele NCN
+
+Każdy grant NCN składa się do 25 paneli dziedzinowych, które należą do trzech głownych grup panel:
+
+ - HS – Nauki Humanistyczne, Społeczne i o Sztuce,
+ - NZ – Nauki o Życiu,
+ - ST – Nauki Ścisłe i Techniczne.
+ 
+## ST1 (Nauki matematyczne)
+
+ - Logika i podstawy matematyki
+ - Algebra
+ - Teoria liczb
+ - Geometria algebraiczna i zespolona
+ - Geometria
+ - Topologia
+ - Grupy Liego i algebry Liego
+ - Analiza
+ - Algebry operatorowe i analiza funkcjonalna
+ - Równania różniczkowe zwyczajne i układy dynamiczne
+
+## ST1 (Nauki matematyczne)
+
+ - Równania różniczkowe cząstkowe
+ - Fizyka matematyczna
+ - Rachunek prawdopodobieństwa i statystyka matematyczna
+ - Kombinatoryka
+ - Matematyczne aspekty informatyki
+ - Analiza numeryczna i obliczenia naukowe
+ - Teoria sterowania i optymalizacja
+ - Zastosowania matematyki w innych naukach
+ - Inne zagadnienia pokrewne
+
+## ST6 (Informatyka i technologie informacyjne)
+
+ - Architektura systemów komputerowych, przetwarzanie wszechobecne
+ - Systemy komputerowe, systemy równoległe i rozproszone, sieci sensorów, systemy wbudowane, systemy cybernetyczne
+ - Systemy programowania, systemy operacyjne, metody rozwoju oprogramowania, języki programowania
+ - Metody formalne, teoretyczne podstawy informatyki w tym informatyka teoretyczna
+ - Kryptologia, prywatność i bezpieczeństwo, informatyka kwantowa
+ - Algorytmika, algorytmy równoległe, rozproszone i sieciowe, algorytmiczna teoria gier
+ - Sztuczna inteligencja, systemy inteligentne i wieloagentowe
+
+## ST6 (Informatyka i technologie informacyjne)
+
+ - Grafika komputerowa, przetwarzanie obrazów, wizualizacja komputerowa, multimedia, gry komputerowe
+ - Interakcja człowiek – komputer, rozpoznawanie i synteza mowy, przetwarzanie języka naturalnego
+ - Technologie i systemy informatyczne, bazy danych, technologie internetowe w tym wyszukiwanie informacji i biblioteki cyfrowe
+ - Uczenie maszynowe, statystyczne przetwarzanie danych i zastosowanie w przetwarzaniu sygnałów
+ - Obliczenia naukowe, narzędzia modelowania i symulacji
+ - Bioinformatyka, bioobliczenia, obliczenia DNA i molekularne
+ - Inne zagadnienia pokrewne
+
+## Skuteczność wniosków
+
+```{r}
+dat <- read.csv("results.csv") %>% 
+  mutate(gr = substr(panel, 0, 2),
+         panel_id = sapply(panel, function(i) substr(as.character(i), 3, nchar(as.character(i)))),
+         panel_id = as.numeric(panel_id),
+         panel_id = factor(panel_id, levels = sort(unique(panel_id))))
+
+
+filter(dat, panel %in% c("ST1", "ST6")) %>% 
+  select(ed, panel, zl, fin) %>% 
+  mutate(ed = factor(ed)) %>% 
+  mutate(success = fin/zl) %>% 
+  melt(measure.vars = c("fin", "zl")) %>% 
+  mutate(success = ifelse(variable == "fin", "", formatC(success, 2)),
+         variable = factor(variable, labels = c("Finansowany", "Złożony")),
+         variable = factor(variable, levels = rev(levels(variable)))) %>%
+  ggplot(aes(x = as.factor(ed), y = value, fill = variable)) +
+  geom_col(position = "dodge") +
+  geom_text(aes(label = success), vjust = 0.1) +
+  facet_wrap(~ panel) +
+  scale_fill_discrete("") +
+  scale_y_continuous("Liczba wniosków") +
+  scale_x_discrete("Edycja") +
+  theme_bw(base_size = 15) +
+  theme(legend.position = "bottom",
+        legend.direction = "horizontal")
+```
+
+## Ocena wniosków
+
+Dwa etapy oceny:
+
+1. Ocena przed ekspertów z panelu.
+2. Ocena przez recenzentów.
