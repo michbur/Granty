@@ -1,0 +1,69 @@
+---
+title: "Mój pierwszy wniosek Preludium"
+author: "Michal Burdukiewicz"
+date: "2 października 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Jak pisać opisy?
+
+Priorytety: 
+
+ - jasność i zwięzłość wywodu,
+ - graficzne schematy,
+ - odniesienia do wstępnych rezultatów/własnych prac dotyczących danej problematyki.
+
+## Jak pisać opisy?
+
+Efektywne zagospodarowania przestrzeni poprzez formatowanie tekstu. 
+
+Ograniczenia:
+
+ - Rozmiar strony - A4,
+ - typ czcionki - Times New Roman,
+ - wielkość czcionki - przynajmniej 11 pkt,
+ - interlinia - pojedyncza, 
+ - marginesy: boczne - 2 cm, dolne, górne - 1,5 cm.
+
+## Jak pisać skrócony opis i streszczenia?
+
+ - Prosty i przejrzysty język. Członkowie panelu nie muszą być specjalistami w dziedzinie, której dotyczy wniosek.
+ - Skupić się na znaczeniu projektu.
+ 
+## Jak pisać szczegółowy opis?
+
+ - Wyczerpująco odwoływać się do literatury przedmiotu. Recenzenci zazwyczaj dobrze orientują się w tematyce projektu.
+ - Skupić się na wstępnych rezultatach i metodologii.
+
+## Jak czytać literaturę?
+
+Software do zarządzania cytacjami (np. EndNote, Mendeley, Zotero).
+
+ - szybkie dodawanie pozycji literaturowych do bazy,
+ - własne annotacje znalezionego piśmiennictwa,
+ - automatyzacja tworzenia bibliografii,
+ - piśmiennictwo w chmurze.
+
+## Jak myśleć o pisaniu grantów?
+
+Grant, który nie zostanie złożony, nigdy nie będzie sfinansowany.
+
+Na każdą akceptację przypada kilka odrzuceń.
+
+Odrzucenie jest katastrofą.
+
+## Zadanie
+
+Napisać polskojęzyczne streszczenie Preludium (1 str A4).
+
+## Struktura opisów
+
+1. Cel naukowy projektu.
+2. Znaczenie projektu.
+3. Koncepcja i plan badań.
+4. Metodyka badań.
+5. Literatura przedmiotu.
