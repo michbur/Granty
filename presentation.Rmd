@@ -24,6 +24,14 @@ Każdy grant NCN składa się do 25 paneli dziedzinowych, które należą do trz
  - HS – Nauki Humanistyczne, Społeczne i o Sztuce,
  - NZ – Nauki o Życiu,
  - ST – Nauki Ścisłe i Techniczne.
+
+## Panele NCN
+
+ - Kierownik projektu wybiera panel samodzielnie. 
+
+ - Skierowanie wniosku do niewłaściwego panelu może zaważyć na ocenie, a nawet skutkować odrzuceniem wniosku przez Zespół Ekspertów.
+
+ - Składanego wniosku nie można kierować do dwóch paneli jednocześnie. Po złożeniu wniosku nie można go przenosić między panelami.
  
 ## ST1 (Nauki matematyczne)
 
@@ -100,9 +108,29 @@ filter(dat, panel %in% c("ST1", "ST6")) %>%
         legend.direction = "horizontal")
 ```
 
-## Ocena wniosków
+## Ocena merytoryczna wniosków
 
-Dwa etapy oceny:
-
-1. Ocena przed ekspertów z panelu.
+1. Ocena formalna.
+1. Ocena przez ekspertów z panelu.
 2. Ocena przez recenzentów.
+
+## Ocena przez ekspertów z panelu
+
+Dwoje członków Zespołu Ekspertów ocenia wnioski indywidualnie. Na tym etapie oceniany jest **formularz** oraz **skrócony opis projektu badawczego**. Oceny są uzgadniane podczas pierwszego posiedzenia Zespołu Ekspertów.
+
+## Ocena przez recenzentów
+
+Eksperci zewnętrzni (czyli spoza Zespołu Ekspertów) oceniają indywidualnie **formularz** oraz **szczegółowy opis projektu badawczego**. 
+
+## Opisy projektu
+
+ - Streszczenie: 1 strona A4, po polsku i angielsku.
+ - Skrócony opis: do 5 stron A4, tylko po polsku.
+ - Szczegółowy opis: do 10 stron A4, tylko po angielsku.
+ - Streszczenie popularnonaukoe: 1 str A4
+
+## Jak pisać skrócony opis i streszczenia?
+
+ - Prosty i przejrzysty język. Członkowie panelu nie muszą być specjalistami w dziedzinie, której dotyczy wniosek (szczególnie ważne przy wnioskach interdyscyplinarnych).
+ 
+ 
