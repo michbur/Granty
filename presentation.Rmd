@@ -17,7 +17,9 @@ library(reshape2)
 
 1. Co to jest Preludium?
 2. Ocena grantów w konkursie Preludium.
-3. Pisanie grantów.
+3. Przykładowe wnioski w Preludium.
+
+Po przerwie część warsztatowa: pisanie wniosków grantowych.
 
 ## Preludium 14
 
@@ -37,7 +39,7 @@ Doktorat wymaga zrealizowania projektu badawczego, którego część może być 
 
 "Uważamy, że zapewnienie wynagrodzenia dla doktoranta jest obowiązkiem jego promotora, który odpowiednie środki finansowe powinien zapewnić w ramach własnego grantu."
 
-Wynagrodzenie dodatkowe (nie wyklucza innych wynagrodzeń/stypendiów finansowanych przez NCN) do 1500 zł/miesięcznie.
+Wynagrodzenie dodatkowe (nie wyklucza innych wynagrodzeń dodatkowych/stypendiów finansowanych przez NCN) do 1500 zł/miesięcznie.
 
 ## Panele NCN
 
@@ -100,9 +102,23 @@ Każdy grant NCN składa się do 25 paneli dziedzinowych, które należą do trz
  - Bioinformatyka, bioobliczenia, obliczenia DNA i molekularne
  - Inne zagadnienia pokrewne
 
-## Ocena wniosków
+## Ocena merytoryczna wniosków
 
 Ocena wniosków jest dwuetapowa.
+
+1. Ocena formalna.
+1. Ocena przez ekspertów z panelu.
+2. Ocena przez recenzentów.
+
+## Ocena przez ekspertów z panelu
+
+Dwoje członków Zespołu Ekspertów ocenia wnioski indywidualnie. Na tym etapie oceniany jest **formularz** oraz **skrócony opis projektu badawczego**. Oceny są uzgadniane podczas pierwszego posiedzenia Zespołu Ekspertów.
+
+## Ocena przez recenzentów
+
+Eksperci zewnętrzni (czyli spoza Zespołu Ekspertów) oceniają indywidualnie **formularz** oraz **szczegółowy opis projektu badawczego**. 
+
+## Ocena wniosków
 
 Tylko wnioski odrzucone w drugim etapie mogą być ponownie złożone. 
 
@@ -136,25 +152,13 @@ filter(dat, panel %in% c("ST1", "ST6")) %>%
         legend.direction = "horizontal")
 ```
 
-## Ocena merytoryczna wniosków
-
-1. Ocena formalna.
-1. Ocena przez ekspertów z panelu.
-2. Ocena przez recenzentów.
-
-## Ocena przez ekspertów z panelu
-
-Dwoje członków Zespołu Ekspertów ocenia wnioski indywidualnie. Na tym etapie oceniany jest **formularz** oraz **skrócony opis projektu badawczego**. Oceny są uzgadniane podczas pierwszego posiedzenia Zespołu Ekspertów.
-
-## Ocena przez recenzentów
-
-Eksperci zewnętrzni (czyli spoza Zespołu Ekspertów) oceniają indywidualnie **formularz** oraz **szczegółowy opis projektu badawczego**. 
 
 ## Opisy projektu
 
 Limity stron uwzględniają literaturę.
 
- - Streszczenie: 1 strona A4, po polsku i angielsku.
+ - Streszczenie (polskie): 1 strona A4.
+ - Streszczenie (angielskie): 1 strona A4.
  - Skrócony opis: do 5 stron A4, tylko po polsku.
  - Szczegółowy opis: do 10 stron A4, tylko po angielsku.
  - Streszczenie popularnonaukowe: 1 str A4
@@ -191,7 +195,7 @@ Problem jaki wnioskodawca podejmuje się rozwiązać, zakładane hipotezy badawc
  
  - Ogólny plan badań, 
  - szczegółowe cele badawcze, 
- - wyniki badań wstępnych, 
+ - **wyniki badań wstępnych**, 
  - analiza ryzyk.
 
 ## Metodyka badań
@@ -200,12 +204,6 @@ Problem jaki wnioskodawca podejmuje się rozwiązać, zakładane hipotezy badawc
  - metody, techniki i narzędzia badawcze, 
  - metody analizy i opracowania wyników, 
  - urządzenia i aparatura wykorzystywane w badaniach.
-
-## Metodyka badań
-
-Harmonogram Adamieckiego (diagram Gantta)
-
-<img src="images/DiagrammeR-gantt-book.png" alt="some_text" style="height: 450px;">
 
 ## Uzasadnienie badań podstawowych
 
@@ -347,6 +345,11 @@ zespołu badawczego, zaplecze badawcze, itp.:
  - 2: Dobra.
  - 1: Słaba.
  - 0: Brak możliwości realizacji projektu.
+
+## Literatura
+
+ - ncn.gov.pl,
+ - każda książka o pisaniu grantów, np. Schimel J., Writing Science: How to Write Papers That Get Cited and Proposals That Get Funded, 2011. Oxford: Oxford University Press.
 
 ## Prezentacja ocen wniosków grantowych
 

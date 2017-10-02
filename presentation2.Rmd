@@ -1,13 +1,21 @@
 ---
 title: "Mój pierwszy wniosek Preludium"
 author: "Michal Burdukiewicz"
-date: "2 października 2017"
-output: html_document
+date: "2-10-2017"
+output: ioslides_presentation
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+## Plan warsztatów
+
+1. Kilka rad dotyczących pisania wniosków.
+2. Pisanie polskiego streszczenia projektu (40 min).
+3. Dyskusja o streszczeniach w podgrupach:
+  - najczęstsze błędy we wnioskach,
+  - najmocniejsze strony wniosków.
 
 ## Jak pisać opisy?
 
@@ -16,6 +24,12 @@ Priorytety:
  - jasność i zwięzłość wywodu,
  - graficzne schematy,
  - odniesienia do wstępnych rezultatów/własnych prac dotyczących danej problematyki.
+
+## Jak pisać opisy?
+
+ - definiować nowe pojęcia i dbać o ich poprawność (zwłaszcza w przypadku polskiej wersji),
+ - nie używać synonimów pojęć specjalistyczych,
+ - pisać dla odbiorców, nie dla siebie (panel + dwaj recenzenci).
 
 ## Jak pisać opisy?
 
@@ -28,6 +42,12 @@ Ograniczenia:
  - wielkość czcionki - przynajmniej 11 pkt,
  - interlinia - pojedyncza, 
  - marginesy: boczne - 2 cm, dolne, górne - 1,5 cm.
+
+## Metodyka badań
+
+Harmonogram Adamieckiego (diagram Gantta)
+
+<img src="images/DiagrammeR-gantt-book.png" alt="some_text" style="height: 450px;">
 
 ## Jak pisać skrócony opis i streszczenia?
 
@@ -48,13 +68,17 @@ Software do zarządzania cytacjami (np. EndNote, Mendeley, Zotero).
  - automatyzacja tworzenia bibliografii,
  - piśmiennictwo w chmurze.
 
+## Jak czytać literaturę?
+
+Dobre zarządzanie cytacjami ułatwia dostęp do już poznanej literatury, co przekłada się na efektywniejszą pracę.
+
 ## Jak myśleć o pisaniu grantów?
 
 Grant, który nie zostanie złożony, nigdy nie będzie sfinansowany.
 
 Na każdą akceptację przypada kilka odrzuceń.
 
-Odrzucenie jest katastrofą.
+Odrzucenie **nie** jest katastrofą.
 
 ## Zadanie
 
