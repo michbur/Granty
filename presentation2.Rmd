@@ -17,6 +17,8 @@ knitr::opts_chunk$set(echo = TRUE)
   - najczęstsze błędy we wnioskach,
   - najmocniejsze strony wniosków.
 
+Pytania i materiały: [michalburdukiewicz@gmail.com](michalburdukiewicz@gmail.com).
+
 ## Jak pisać opisy?
 
 Priorytety: 

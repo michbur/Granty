@@ -21,6 +21,8 @@ library(reshape2)
 
 Po przerwie część warsztatowa: pisanie wniosków grantowych.
 
+Pytania i materiały: [michalburdukiewicz@gmail.com](michalburdukiewicz@gmail.com).
+
 ## Preludium 14
 
 Projekty badawcze realizowane przez osoby rozpoczynające karierę naukową nieposiadające stopnia naukowego doktora.
