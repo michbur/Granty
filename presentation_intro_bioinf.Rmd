@@ -16,13 +16,16 @@ library(reshape2)
 ## Plan prezentacji
 
 1. Co to jest Preludium?
-2. Ocena grantów w konkursie Preludium.
-3. Przykładowe wnioski w Preludium.
+1. Co to jest Etiuda?
+2. Ocena grantów w konkursach.
 
 ## Preludium 
 
 Projekty badawcze realizowane przez osoby rozpoczynające karierę naukową nieposiadające stopnia naukowego doktora.
 
+## Etiuda
+
+Stypendia doktorskie.
 
 ## Dlaczego pisać granty?
 
@@ -34,11 +37,15 @@ Projekty badawcze realizowane przez osoby rozpoczynające karierę naukową niep
 
 Doktorat wymaga zrealizowania projektu badawczego, którego część może być finansowana przez Preludium.
 
-## Wynagrodzenia
+## Wynagrodzenia - Preludium
 
 "Uważamy, że zapewnienie wynagrodzenia dla doktoranta jest obowiązkiem jego promotora, który odpowiednie środki finansowe powinien zapewnić w ramach własnego grantu."
 
 Wynagrodzenie dodatkowe (nie wyklucza innych wynagrodzeń dodatkowych/stypendiów finansowanych przez NCN) do 1500 zł/miesięcznie.
+
+## Wynagrodzenia - Etiuda
+
+Stypendium doktorskie do 4500 zl/miesięcznie.
 
 ## Panele NCN
 
@@ -177,24 +184,6 @@ wszystkim w celu zdobywania nowej wiedzy o podstawach
 zjawisk i obserwowalnych faktów bez nastawienia na
 bezpośrednie praktyczne zastosowanie lub użytkowanie (za art. 2 pkt 3 ustawy z 30.04.2010 r. o zasadach
 finansowania nauki).
-
-## Ocena wniosków
-
-```{r}
-dat <- read.csv("ocena.csv")
-
-ggplot(dat, aes(x = 1, y = value, fill = category)) +
-  geom_col() +
-  coord_flip() +
-  theme_void() +
-  guides(fill = guide_legend(title = "", ncol = 2)) +
-  theme(legend.position = "bottom",
-        legend.direction = "vertical",
-        axis.ticks.x = element_line(color = "black"),
-        axis.text.x = element_text(color = "black", angle = 0, debug = FALSE)) +
-  #scale_y_continuous(breaks = cumsum(rev(dat[["value"]]))) +
-  scale_y_continuous(breaks = c(60L, 75L, 80L, 90L, 100L))
-```
 
 
 ## Zasady oceniania
