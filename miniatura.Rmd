@@ -1,0 +1,31 @@
+---
+title: "Potencjalne granty"
+author: "Michal Burdukiewicz"
+date: "20-04-2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.width = 10, fig.height = 5.5)
+
+library(ggplot2)
+library(dplyr)
+library(reshape2)
+```
+
+## Plan spotkania
+
+1. Miniatura
+2. Preludium
+
+## Miniatura
+
+Kosztami kwalifikowalnymi w konkursie MINIATURA 2 nie są:
+
+ - koszty zakupu, wytworzenia lub modernizacji aparatury naukowo-badawczej, urządzeń i oprogramowania
+ - koszty wynagrodzeń oraz stypendiów naukowych, z wyjątkiem wynagrodzeń wykonawców zbiorowych niebędących pracownikami jednostki, w której realizowane jest działanie;
+ 
+## Wykonawcy zbiorowi
+
+Wykonawca zbiorowy to minimum dwie osoby o jednorodzajowym zakresie obowiązków (np. ankieterzy) oraz uczestnicy badań. Kategoria ta nie obejmuje techników i laborantów.
+
